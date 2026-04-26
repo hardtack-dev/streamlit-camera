@@ -1,3 +1,4 @@
+# 메인 엔트리 포인트
 import streamlit as st
 
 # 페이지 환경설정

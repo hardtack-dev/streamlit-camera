@@ -1,3 +1,4 @@
+# pages/3_quiz.py (퀴즈 페이지)
 import streamlit as st
 from core import toolbox as tb
 

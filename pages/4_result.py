@@ -1,3 +1,4 @@
+# pages/4_result.py (결과화면 페이지)
 import time
 import plotly.express as px
 import streamlit as st

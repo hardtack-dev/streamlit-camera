@@ -1,4 +1,4 @@
-# pages/2_guide.py
+# pages/2_guide.py (가이딩 페이지)
 import streamlit as st
 from core import toolbox as tb
 

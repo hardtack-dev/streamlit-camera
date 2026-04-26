@@ -1,3 +1,4 @@
+# pages/1_landing.py (시작&로그인 페이지)
 import streamlit as st
 from core import toolbox as tb  # core 폴더의 toolbox를 tb라는 이름으로 임포트
 

@@ -81,19 +81,19 @@ with col2:
     st.write("---")
 
     # 퀴즈 데이터 옵션 렌더링
-    options = quiz_data[curr_idx]["options"] # [인덱스 번호][options 배열]으로 접근하여, 버튼으로 렌더링
-    for i in range(0, len(options), 2): # 2개 열로 렌더링하기 위해, 2개씩 묶어서 처리 i=2씩 증가
-        row_options = options[i:i+2]    # 선택지를 2씩 묶어주기 [a,b], [c,d] 형태로 묶어서 처리
-        cols = st.columns(2)            # 2개 열로 컬럼 생성
-        for j, opt in enumerate(row_options): # 각 열에 대해, j:0,1(인덱스) / opt:실제 옵션 데이터
-            btn_idx = i + j                   # 실제 옵션의 인덱스 번호 계산 (i는 0,2,4... / j는 0,1이므로, btn_idx는 0,1,2,3...)
+    options = quiz_data[curr_idx]["options"]    # [인덱스 번호][options 배열]으로 접근하여, 버튼으로 렌더링
+    for i in range(0, len(options), 2):         # 2개 열로 렌더링하기 위해, 2개씩 묶어서 처리 i=2씩 증가
+        row_options = options[i:i+2]            # 선택지를 2씩 묶어주기 [a,b], [c,d] 형태로 묶어서 처리
+        cols = st.columns(2)                    # 2개 열로 컬럼 생성
+        for j, opt in enumerate(row_options):   # 각 열에 대해, j:0,1(인덱스) / opt:실제 옵션 데이터
+            btn_idx = i + j                     # 실제 옵션의 인덱스 번호 계산 (i는 0,2,4... / j는 0,1이므로, btn_idx는 0,1,2,3...)
             if cols[j].button(opt["text"], key=f"btn-{btn_idx}", width="stretch"): # 각 열의 버튼 렌더링, 클릭 시 btn_idx로 어떤 옵션이 선택됐는지 알 수 있음 
-                st.session_state.answers[curr_idx] = btn_idx # 대답에는 질문 인덱스 번호와, 선택한 옵션의 인덱스 번호 저장
-                if curr_idx < len(quiz_data) - 1:   # 마지막 질문이 아니라면, 다음 질문으로 이동
-                    st.session_state.current_q += 1 # 다음 질문으로 이동하기 위해, current_q 인덱스 번호 1 증가
-                    st.rerun()  # 페이지 다시 렌더링
+                st.session_state.answers[curr_idx] = btn_idx    # 대답에는 질문 인덱스 번호와, 선택한 옵션의 인덱스 번호 저장
+                if curr_idx < len(quiz_data) - 1:               # 마지막 질문이 아니라면, 다음 질문으로 이동
+                    st.session_state.current_q += 1             # 다음 질문으로 이동하기 위해, current_q 인덱스 번호 1 증가
+                    st.rerun()                                  # 이동 시, 페이지 다시 렌더링
                 else:
-                    st.switch_page("pages/4_result.py") # 마지막 질문이라면, 결과 페이지로 이동
+                    st.switch_page("pages/4_result.py")         # 마지막 질문이라면, 결과 페이지로 이동
 
     st.write("---")
     

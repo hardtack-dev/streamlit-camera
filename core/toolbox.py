@@ -13,7 +13,7 @@ def load_json_data_cached(filename):
 def load_json_data(filename):
     return base_load_json_data(filename)
 
-# base로더
+# base JSON로더
 def base_load_json_data(filename):
     current_dir = os.path.dirname(os.path.abspath(__file__))
     file_path = os.path.join(current_dir, ".." ,"data", filename)

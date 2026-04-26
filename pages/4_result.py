@@ -32,31 +32,33 @@ def show_competitors_dialog(competitors_list, result_data):
 
 
 #  점수 및 순위 계산 로직 
-total_scores = {}
-if "answers" in st.session_state:
-    for q_idx, opt_idx in st.session_state.answers.items():
-        scores = quiz_data[q_idx]["options"][opt_idx]["scores"]
-        for category, value in scores.items():
-            total_scores[category] = total_scores.get(category, 0) + value
+total_scores = {}                                               # 카테고리별 점수를 담을 딕셔너리
+if "answers" in st.session_state:                               # 사용자가 푼 답변이 세션에 존재하는지 확인
+    for q_idx, opt_idx in st.session_state.answers.items():     # 선택한 문항의 인덱스(q_idx)와 옵션의 인덱스(opt_idx)을 꺼내서 처리 
+        scores = quiz_data[q_idx]["options"][opt_idx]["scores"] # JSON파일의 형식에 따라, q_idx(질문)에 따른 options(리스트), opt_idx(나의 답변)에 따른 socre(가중치 점수) 추출
+        for category, value in scores.items():                  # 카테고리와 점수(가중치)를 순회
+            total_scores[category] = total_scores.get(category, 0) + value # 카테고리별로 점수를 누적하여 계산, 키(카테고리)를 찾아 기존 점수에 현재 가중치 점수를 더하는 방식으로 총점 계산
 
 close_competitors = []
 
-# 1위 값 추출하기
+# 결과 정렬 및 1위 값 추출
 if total_scores:
-    sorted_scores = sorted(total_scores.items(), key=lambda item: item[1], reverse=True)
-    best_camera_key = sorted_scores[0][0]
-    best_score = sorted_scores[0][1]
-    result = result_data[0][best_camera_key]
-    formatted_desc = re.sub(r'([.!?])\s+', r'\1  \n\n', result["desc"])
+    sorted_scores = sorted(total_scores.items(), key=lambda item: item[1], reverse=True) # total_scores 딕셔너리를 카테고리, 점수 기준으로 내림차순 정렬하여 저장
+    best_camera_key = sorted_scores[0][0]                                   # 1위인 카메라의 키(카테고리명)를 추출
+    best_score = sorted_scores[0][1]                                        # 1위인 카메라의 점수를 추출 (비교용)        
+    result = result_data[0][best_camera_key]                                # 결과변수에 1위 카메라의 키를 찾아 상세 정보(이미지, 설명 등)를 저장
+    formatted_desc = re.sub(r'([.!?])\s+', r'\1  \n\n', result["desc"])     # 설명 텍스트를 문장 단위로 나누는 로직(regex)
     
-    for rank in range(1, min(3, len(sorted_scores))): 
-        cam_key = sorted_scores[rank][0]
-        score = sorted_scores[rank][1]
-        diff = best_score - score
-        if diff < 10:
-            close_competitors.append((rank + 1, cam_key, score, diff))
+    # 2, 3위 결과 추출
+    for rank in range(1, min(3, len(sorted_scores))):                       # 2위(idx 1)와 3위(idx 2)까지만 추출하도록 범위 설정
+        cam_key = sorted_scores[rank][0]                                    # 순위별 카메라 키 추출
+        score = sorted_scores[rank][1]                                      # 순위별 카메라 점수 추출  
+        diff = best_score - score                                           # 1위(best_score)와의 점수 차이 계산         
+                                                                            
+        if diff < 10:                                                       # 1위와 점수 차이가 10점 미만인 경우에            
+            close_competitors.append((rank + 1, cam_key, score, diff))      # 경쟁 카메라 리스트(close_competitors)에 추가
 else:
-    st.error("퀴즈를 완료하지 않으셨거나, 잘못된 접근입니다.")
+    st.error("퀴즈를 완료하지 않으셨거나, 잘못된 접근입니다.")                       # 잘못된 접근일시 차단
     st.markdown("### 2초 뒤, 시작화면으로 이동합니다 ")
     time.sleep(2)
     st.switch_page("pages/1_landing.py")
@@ -99,11 +101,12 @@ with main:
         with st.container(border=True, height=635):
             # 탭 3개 생성 (데이터 분석 결과, 카메라 세부 스펙, 나의 답변)
             tab_chart, tab_specs, tab_answers = st.tabs(["📊 데이터 분석 결과", "📸 추천 카메라 세부스펙", "✍️ 나의 답변"])
+
             # 탭1: 레이더 차트로 분석 결과 시각화
             with tab_chart:
                 st.markdown("#### 📈 나의 카메라 취향 분석")
                 if total_scores:
-                    display_names = {
+                    display_names = { # 카테고리 키를 사용자 친화적인 이름으로 매핑
                         "Sony_Hybrid": "⚖️ 소니 하이브리드", "Sony_Video": "🎥 소니 브이로그",
                         "Canon_Photo": "📸 캐논 프로(사진)", "Sony_Photo": "🖼️ 소니 고해상도",
                         "Canon_Hybrid": "🏃 캐논 경량풀프", "Canon_Crop": "🎒 캐논 입문용",

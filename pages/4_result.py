@@ -67,8 +67,9 @@ else:
 # 메인 레이아웃 구성 (1 : 3 : 1)
 left_space, main, right_space = st.columns([1, 3, 1])
 with main:
-       
-    st.balloons()
+    if not st.session_state.get("balloons_shown", False):   
+        st.balloons()
+        st.session_state.balloons_shown = True
     
     st.markdown(f"<h2 style='text-align: center;'> {st.session_state.user_name}님에게 맞는 카메라를 찾았어요!</h2>", unsafe_allow_html=True)
     st.write("---")
@@ -91,7 +92,7 @@ with main:
             st.markdown(f"###### {formatted_desc}")
         
         if st.button("다시 테스트하기", width="stretch", type="primary"):
-            st.session_state.update({"current_q": 0, "answers": {}, "result_analyzed": False})
+            st.session_state.update({"current_q": 0, "answers": {}, "balloons_shown": False})
             st.switch_page("pages/2_guide.py")
 
         if st.button("로그아웃 하기", width="stretch"):

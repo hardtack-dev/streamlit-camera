@@ -20,7 +20,7 @@ def login_dialog():
     
     if st.button("접속 및 시작!", width="stretch", type="primary"):
         # 도구함의 데이터 로더 사용
-        user_db = tb.load_json_data("users.json")
+        user_db = tb.load_json_data("credentials.json")
         
         # 자료형 오류 방지를 위해 str()로 통일하여 비교
         if user_id in user_db and str(user_db[user_id]) == str(user_pw):

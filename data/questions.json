@@ -1,0 +1,152 @@
+[
+    {
+        "id": 1,
+        "question": "🏃 주로 어떤 피사체를 찍고 싶나요?",
+        "options": [
+            {"text": "1초도 가만히 안 있는 강아지, 스포츠, 액션", "scores": {"Phone": -1, "Pocket_Cam": 1, "Sony_Photo": 2, "Canon_Photo": 3, "Nikon_Photo": 1, "Fuji_Photo": -1, "Fuji_Compact": -1, "Sony_Video": 2, "Pana_Video": 0, "Sony_Hybrid": 3, "Canon_Hybrid": 2, "Canon_Crop": 1, "Pana_M43": 2}},
+            {"text": "거대한 대자연, 은하수, 디테일이 생명인 풍경.", "scores": {"Phone": -2, "Pocket_Cam": -3, "Sony_Photo": 4, "Canon_Photo": 4, "Nikon_Photo": 4, "Fuji_Photo": 1, "Fuji_Compact": 0, "Sony_Video": -1, "Pana_Video": 1, "Sony_Hybrid": 1, "Canon_Hybrid": 1, "Canon_Crop": 0, "Pana_M43": 0}},
+            {"text": "내 얼굴과 친구들의 인생샷, 브이로그 인물 촬영.", "scores": {"Phone": 1, "Pocket_Cam": 2, "Sony_Photo": 0, "Canon_Photo": 2, "Nikon_Photo": 0, "Fuji_Photo": 1, "Fuji_Compact": 1, "Sony_Video": 3, "Pana_Video": 0, "Sony_Hybrid": 1, "Canon_Hybrid": 4, "Canon_Crop": 3, "Pana_M43": 0}},
+            {"text": "감성 카페 디저트, 예쁜 소품. ", "scores": {"Phone": 2, "Pocket_Cam": 0, "Sony_Photo": 0, "Canon_Photo": 0, "Nikon_Photo": 0, "Fuji_Photo": 3, "Fuji_Compact": 4, "Sony_Video": 0, "Pana_Video": 0, "Sony_Hybrid": 0, "Canon_Hybrid": 0, "Canon_Crop": 1, "Pana_M43": 0}}
+        ]
+    },
+    {
+        "id": 2,
+        "question": "🎬 사진과 영상, 어느 쪽에 더 진심이신가요?",
+        "options": [
+            {"text": "100% 사진! 찰나의 순간을 얼려버리는 사진가.", "scores": {"Phone": 0, "Pocket_Cam": -4, "Sony_Photo": 4, "Canon_Photo": 4, "Nikon_Photo": 4, "Fuji_Photo": 3, "Fuji_Compact": 2, "Sony_Video": -3, "Pana_Video": -3, "Sony_Hybrid": 1, "Canon_Hybrid": 2, "Canon_Crop": 1, "Pana_M43": 0}},
+            {"text": "사진7, 영상3 정도? 가끔 짧은 클립 정도 찍음.", "scores": {"Phone": 1, "Pocket_Cam": -1, "Sony_Photo": 1, "Canon_Photo": 2, "Nikon_Photo": 1, "Fuji_Photo": 1, "Fuji_Compact": 1, "Sony_Video": -1, "Pana_Video": 0, "Sony_Hybrid": 2, "Canon_Hybrid": 2, "Canon_Crop": 1, "Pana_M43": 1}},
+            {"text": "영상7, 사진3. 브이로그나 유튜브를 진지하게 고민 중!", "scores": {"Phone": 1, "Pocket_Cam": 2, "Sony_Photo": -2, "Canon_Photo": -2, "Nikon_Photo": -2, "Fuji_Photo": -2, "Fuji_Compact": -1, "Sony_Video": 3, "Pana_Video": 2, "Sony_Hybrid": 2, "Canon_Hybrid": -1, "Canon_Crop": 1, "Pana_M43": 2}},
+            {"text": "100% 영상! 걸어다니면서 시네마틱 무비/브이로그 제작.", "scores": {"Phone": 0, "Pocket_Cam": 4, "Sony_Photo": -4, "Canon_Photo": -4, "Nikon_Photo": -4, "Fuji_Photo": -4, "Fuji_Compact": -3, "Sony_Video": 4, "Pana_Video": 4, "Sony_Hybrid": 1, "Canon_Hybrid": -3, "Canon_Crop": -2, "Pana_M43": 2}}
+        ]
+    },
+    {
+        "id": 3,
+        "question": "🎒 외출할 때 어떤 가방을 들고 싶나요?",
+        "options": [
+            {"text": "거대한 백팩! 수납력이 좋은게 최고.", "scores": {"Phone": -3, "Pocket_Cam": -3, "Sony_Photo": 3, "Canon_Photo": 3, "Nikon_Photo": 2, "Fuji_Photo": 1, "Fuji_Compact": -2, "Sony_Video": 0, "Pana_Video": 2, "Sony_Hybrid": 1, "Canon_Hybrid": 1, "Canon_Crop": -1, "Pana_M43": 1}},
+            {"text": "바디 1개, 렌즈 1개가 딱 들어가는 작은 크로스백", "scores": {"Phone": 0, "Pocket_Cam": 0, "Sony_Photo": 0, "Canon_Photo": 0, "Nikon_Photo": 0, "Fuji_Photo": 2, "Fuji_Compact": 1, "Sony_Video": 1, "Pana_Video": 0, "Sony_Hybrid": 2, "Canon_Hybrid": 1, "Canon_Crop": 2, "Pana_M43": 2}},
+            {"text": "지갑만 겨우 들어가는 미니백이나 에코백", "scores": {"Phone": 2, "Pocket_Cam": 3, "Sony_Photo": -2, "Canon_Photo": -2, "Nikon_Photo": -2, "Fuji_Photo": -1, "Fuji_Compact": 3, "Sony_Video": 1, "Pana_Video": -2, "Sony_Hybrid": -1, "Canon_Hybrid": -1, "Canon_Crop": 1, "Pana_M43": -1}},
+            {"text": "가방? 난 주머니에 넣고 다닌다.", "scores": {"Phone": 5, "Pocket_Cam": 4, "Sony_Photo": -4, "Canon_Photo": -4, "Nikon_Photo": -4, "Fuji_Photo": -4, "Fuji_Compact": 1, "Sony_Video": -1, "Pana_Video": -4, "Sony_Hybrid": -3, "Canon_Hybrid": -3, "Canon_Crop": -2, "Pana_M43": -3}}
+        ]
+    },
+    {
+        "id": 4,
+        "question": "🏋️ 당신의 어깨와 팔뚝 상태는 안녕하신가요?",
+        "options": [
+            {"text": "내 팔뚝은 강철! 무거운 대포 카메라도 OK.", "scores": {"Phone": -3, "Pocket_Cam": -3, "Sony_Photo": 3, "Canon_Photo": 3, "Nikon_Photo": 2, "Fuji_Photo": 0, "Fuji_Compact": -2, "Sony_Video": 0, "Pana_Video": 3, "Sony_Hybrid": 1, "Canon_Hybrid": 1, "Canon_Crop": -2, "Pana_M43": 1}},
+            {"text": "화질을 위해서라면 1kg 초반대까진 참겠습니다.", "scores": {"Phone": -1, "Pocket_Cam": -1, "Sony_Photo": 1, "Canon_Photo": 1, "Nikon_Photo": 1, "Fuji_Photo": 1, "Fuji_Compact": 0, "Sony_Video": 2, "Pana_Video": 0, "Sony_Hybrid": 3, "Canon_Hybrid": 3, "Canon_Crop": 0, "Pana_M43": 1}},
+            {"text": "무거우면 무조건 장롱행! 작고 가벼운 게 최고.", "scores": {"Phone": 1, "Pocket_Cam": 3, "Sony_Photo": -2, "Canon_Photo": -2, "Nikon_Photo": -2, "Fuji_Photo": 0, "Fuji_Compact": 3, "Sony_Video": 2, "Pana_Video": -3, "Sony_Hybrid": 0, "Canon_Hybrid": 0, "Canon_Crop": 3, "Pana_M43": 1}},
+            {"text": "무게 0g 지향. 손에 들고 다니기도 귀찮습니다.", "scores": {"Phone": 4, "Pocket_Cam": 2, "Sony_Photo": -3, "Canon_Photo": -3, "Nikon_Photo": -3, "Fuji_Photo": -2, "Fuji_Compact": 1, "Sony_Video": -1, "Pana_Video": -3, "Sony_Hybrid": -2, "Canon_Hybrid": -2, "Canon_Crop": -1, "Pana_M43": -2}}
+        ]
+    },
+    {
+        "id": 5,
+        "question": "💸 카메라에 얼마나 진심인가요?",
+        "options": [
+            {"text": "나의 3개월치 월급을 바칠 수 있어요!", "scores": {"Phone": -5, "Pocket_Cam": -2, "Sony_Photo": 3, "Canon_Photo": 3, "Nikon_Photo": 2, "Fuji_Photo": 1, "Fuji_Compact": 1, "Sony_Video": 2, "Pana_Video": 2, "Sony_Hybrid": 2, "Canon_Hybrid": 2, "Canon_Crop": 0, "Pana_M43": 1}},
+            {"text": "성능과 화질을 타협볼래요 (중급기/Vlog 지향)", "scores": {"Phone": -1, "Pocket_Cam": 2, "Sony_Photo": -1, "Canon_Photo": -1, "Nikon_Photo": 0, "Fuji_Photo": 2, "Fuji_Compact": 1, "Sony_Video": 2, "Pana_Video": 0, "Sony_Hybrid": 1, "Canon_Hybrid": 1, "Canon_Crop": 1, "Pana_M43": 2}},
+            {"text": "'카메라'를 사용해보고 싶어요(입문) ", "scores": {"Phone": 1, "Pocket_Cam": 2, "Sony_Photo": -2, "Canon_Photo": -3, "Nikon_Photo": -2, "Fuji_Photo": -1, "Fuji_Compact": 0, "Sony_Video": -1, "Pana_Video": -2, "Sony_Hybrid": 0, "Canon_Hybrid": -1, "Canon_Crop": 3, "Pana_M43": 0}},
+            {"text": "굳이 카메라가 필요한가?", "scores": {"Phone": 5, "Pocket_Cam": 0, "Sony_Photo": -3, "Canon_Photo": -4, "Nikon_Photo": -3, "Fuji_Photo": -3, "Fuji_Compact": -2, "Sony_Video": -3, "Pana_Video": -3, "Sony_Hybrid": -3, "Canon_Hybrid": -3, "Canon_Crop": -2, "Pana_M43": -3}}
+        ]
+    },
+    {
+        "id": 6,
+        "question": "💻 집에 돌아온 당신의 보정 루틴은?",
+        "options": [
+            {"text": "RAW 파일 켜라. 라이트룸으로로 영혼까지 끌어올린다.", "scores": {"Phone": -3, "Pocket_Cam": -2, "Sony_Photo": 4, "Canon_Photo": 4, "Nikon_Photo": 2, "Fuji_Photo": -2, "Fuji_Compact": -2, "Sony_Video": 1, "Pana_Video": 2, "Sony_Hybrid": 2, "Canon_Hybrid": 1, "Canon_Crop": 0, "Pana_M43": 1}},
+            {"text": "기본 색감에 밝기나 대비만 살짝 건드리는 정도?", "scores": {"Phone": 1, "Pocket_Cam": 1, "Sony_Photo": 0, "Canon_Photo": 1, "Nikon_Photo": 1, "Fuji_Photo": 1, "Fuji_Compact": 1, "Sony_Video": 1, "Pana_Video": 1, "Sony_Hybrid": 1, "Canon_Hybrid": 2, "Canon_Crop": 2, "Pana_M43": 1}},
+            {"text": "필름 시뮬레이션! 카메라 자체 색감으로 찍고 무보정 직출.", "scores": {"Phone": 1, "Pocket_Cam": 0, "Sony_Photo": -1, "Canon_Photo": -1, "Nikon_Photo": 0, "Fuji_Photo": 4, "Fuji_Compact": 4, "Sony_Video": -1, "Pana_Video": -1, "Sony_Hybrid": -1, "Canon_Hybrid": 0, "Canon_Crop": 1, "Pana_M43": -1}},
+            {"text": "보정이 뭐죠? 그런게 있나요?", "scores": {"Phone": 4, "Pocket_Cam": 3, "Sony_Photo": -2, "Canon_Photo": -3, "Nikon_Photo": -2, "Fuji_Photo": -1, "Fuji_Compact": 2, "Sony_Video": 1, "Pana_Video": -2, "Sony_Hybrid": -1, "Canon_Hybrid": -1, "Canon_Crop": 1, "Pana_M43": -1}}
+        ]
+    },
+    {
+        "id": 7,
+        "question": "📸 디자인 취향, 어느 쪽이 더 심장을 뛰게 하나요?",
+        "options": [
+            {"text": "버튼이 많고 미래지향적인 첨단 IT 기기 룩.", "scores": {"Phone": 0, "Pocket_Cam": 1, "Sony_Photo": 3, "Canon_Photo": 2, "Nikon_Photo": -1, "Fuji_Photo": -1, "Fuji_Compact": -1, "Sony_Video": 2, "Pana_Video": 1, "Sony_Hybrid": 2, "Canon_Hybrid": 1, "Canon_Crop": 0, "Pana_M43": 1}},
+            {"text": "손에 착 감기는 그립감이 좋아요", "scores": {"Phone": 0, "Pocket_Cam": 0, "Sony_Photo": 1, "Canon_Photo": 3, "Nikon_Photo": 0, "Fuji_Photo": 0, "Fuji_Compact": 0, "Sony_Video": 0, "Pana_Video": 2, "Sony_Hybrid": 1, "Canon_Hybrid": 3, "Canon_Crop": 2, "Pana_M43": 1}},
+            {"text": "드르륵 찰칵! 금속 다이얼이 잔뜩 달린 빈티지/레트로 룩.", "scores": {"Phone": -2, "Pocket_Cam": -2, "Sony_Photo": -2, "Canon_Photo": -1, "Nikon_Photo": 3, "Fuji_Photo": 3, "Fuji_Compact": 2, "Sony_Video": -2, "Pana_Video": -2, "Sony_Hybrid": -1, "Canon_Hybrid": -1, "Canon_Crop": -1, "Pana_M43": -1}},
+            {"text": "미니멀리즘! 작고 매끈한게 최고.", "scores": {"Phone": 4, "Pocket_Cam": 3, "Sony_Photo": -2, "Canon_Photo": -2, "Nikon_Photo": -2, "Fuji_Photo": -2, "Fuji_Compact": 2, "Sony_Video": 1, "Pana_Video": -2, "Sony_Hybrid": -1, "Canon_Hybrid": -2, "Canon_Crop": 0, "Pana_M43": -2}}
+        ]
+    },
+    {
+        "id": 8,
+        "question": "🌧️ 갑작스러운 비바람, 당신의 대처는?",
+        "options": [
+            {"text": "물 따위는 나를 막지 못한다. 비를 맞으며 촬영을 강행", "scores": {"Phone": 0, "Pocket_Cam": -1, "Sony_Photo": 3, "Canon_Photo": 3, "Nikon_Photo": 3, "Fuji_Photo": 1, "Fuji_Compact": -1, "Sony_Video": 0, "Pana_Video": 3, "Sony_Hybrid": 1, "Canon_Hybrid": 1, "Canon_Crop": 0, "Pana_M43": 2}},
+            {"text": "소중한 카메라를 옷 속에 품고 실내로 뛰어 들어간다.", "scores": {"Phone": 0, "Pocket_Cam": 0, "Sony_Photo": 0, "Canon_Photo": 0, "Nikon_Photo": 0, "Fuji_Photo": 0, "Fuji_Compact": 0, "Sony_Video": 1, "Pana_Video": 0, "Sony_Hybrid": 1, "Canon_Hybrid": 1, "Canon_Crop": 1, "Pana_M43": 0}},
+            {"text": "가죽 케이스와 융으로 감싸서 가방 깊숙이 피신시킨다.", "scores": {"Phone": 1, "Pocket_Cam": 1, "Sony_Photo": 0, "Canon_Photo": 0, "Nikon_Photo": -1, "Fuji_Photo": 1, "Fuji_Compact": 3, "Sony_Video": 0, "Pana_Video": -1, "Sony_Hybrid": 0, "Canon_Hybrid": 0, "Canon_Crop": 0, "Pana_M43": -1}},
+            {"text": "방수폰, 방수액션캠인데 무슨 상관? 수중 촬영 간다!", "scores": {"Phone": 4, "Pocket_Cam": 2, "Sony_Photo": -1, "Canon_Photo": -1, "Nikon_Photo": -1, "Fuji_Photo": -1, "Fuji_Compact": -1, "Sony_Video": -1, "Pana_Video": -1, "Sony_Hybrid": -1, "Canon_Hybrid": -1, "Canon_Crop": -1, "Pana_M43": -1}}
+        ]
+    },
+    {
+        "id": 9,
+        "question": "⚙️ 카메라 조작성에 대한 철학은?",
+        "options": [
+            {"text": "단축키 커스텀 세팅은 필수! 옵션 많은게 최고.", "scores": {"Phone": -2, "Pocket_Cam": -1, "Sony_Photo": 3, "Canon_Photo": 3, "Nikon_Photo": 1, "Fuji_Photo": 0, "Fuji_Compact": -1, "Sony_Video": 1, "Pana_Video": 2, "Sony_Hybrid": 1, "Canon_Hybrid": 0, "Canon_Crop": -1, "Pana_M43": 2}},
+            {"text": "직관적이고 쉬운 메뉴. 터치스크린으로 폰처럼 다루고 싶음.", "scores": {"Phone": 2, "Pocket_Cam": 2, "Sony_Photo": -1, "Canon_Photo": 0, "Nikon_Photo": 0, "Fuji_Photo": 0, "Fuji_Compact": 1, "Sony_Video": 2, "Pana_Video": 0, "Sony_Hybrid": 1, "Canon_Hybrid": 3, "Canon_Crop": 3, "Pana_M43": 0}},
+            {"text": "손가락 감각만으로 다이얼을 돌리는 아날로그 손맛.", "scores": {"Phone": -2, "Pocket_Cam": -2, "Sony_Photo": 0, "Canon_Photo": -1, "Nikon_Photo": 3, "Fuji_Photo": 3, "Fuji_Compact": 2, "Sony_Video": -1, "Pana_Video": 0, "Sony_Hybrid": 0, "Canon_Hybrid": 0, "Canon_Crop": -1, "Pana_M43": 0}},
+            {"text": "물리 버튼은 구시대 유물! 터치 화면 조작이 최고.", "scores": {"Phone": 4, "Pocket_Cam": 2, "Sony_Photo": -2, "Canon_Photo": -2, "Nikon_Photo": -2, "Fuji_Photo": -2, "Fuji_Compact": -1, "Sony_Video": 1, "Pana_Video": -2, "Sony_Hybrid": -1, "Canon_Hybrid": -1, "Canon_Crop": 1, "Pana_M43": -2}}
+        ]
+    },
+    {
+        "id": 10,
+        "question": "✨ 카메라 뽀대(멋)의 기준은 무엇인가요?",
+        "options": [
+            {"text": "거대한 대포 렌즈와 후드! 누가 봐도 전문가 포스.", "scores": {"Phone": -2, "Pocket_Cam": -3, "Sony_Photo": 3, "Canon_Photo": 3, "Nikon_Photo": 1, "Fuji_Photo": -1, "Fuji_Compact": -2, "Sony_Video": -1, "Pana_Video": 1, "Sony_Hybrid": 0, "Canon_Hybrid": 3, "Canon_Crop": 0, "Pana_M43": 1}},
+            {"text": "그립과 케이지를 씌운 전투형 영상 셋업 룩.", "scores": {"Phone": -2, "Pocket_Cam": 0, "Sony_Photo": 1, "Canon_Photo": -1, "Nikon_Photo": 1, "Fuji_Photo": 0, "Fuji_Compact": -1, "Sony_Video": 2, "Pana_Video": 3, "Sony_Hybrid": 0, "Canon_Hybrid": 0, "Canon_Crop": -1, "Pana_M43": 2}},
+            {"text": "가죽 스트랩과 예쁜 소프트버튼으로 꾸민 패션 아이템 룩.", "scores": {"Phone": 1, "Pocket_Cam": 0, "Sony_Photo": -1, "Canon_Photo": -1, "Nikon_Photo": 2, "Fuji_Photo": 2, "Fuji_Compact": 4, "Sony_Video": 0, "Pana_Video": -1, "Sony_Hybrid": 0, "Canon_Hybrid": -1, "Canon_Crop": 1, "Pana_M43": -1}},
+            {"text": "셀카 찍을 때 가장 빛나는 건 최신 스마트폰/미니캠이죠.", "scores": {"Phone": 4, "Pocket_Cam": 3, "Sony_Photo": -2, "Canon_Photo": -2, "Nikon_Photo": -2, "Fuji_Photo": -2, "Fuji_Compact": 1, "Sony_Video": 1, "Pana_Video": -2, "Sony_Hybrid": -1, "Canon_Hybrid": -2, "Canon_Crop": 0, "Pana_M43": -2}}
+        ]
+    },
+    {
+        "id": 11,
+        "question": "🔄 렌즈 교환에 대한 당신의 인내심 한계는?",
+        "options": [
+            {"text": "상황에 맞춰 광각/망원을 갈아 끼우는 것이 카메라의 묘미.", "scores": {"Phone": -4, "Pocket_Cam": -3, "Sony_Photo": 3, "Canon_Photo": 3, "Nikon_Photo": 2, "Fuji_Photo": 1, "Fuji_Compact": -3, "Sony_Video": 1, "Pana_Video": 2, "Sony_Hybrid": 2, "Canon_Hybrid": 2, "Canon_Crop": 0, "Pana_M43": 1}},
+            {"text": "귀찮으니 광범위 줌렌즈 하나 끼워놓고 웬만하면 안 뺌.", "scores": {"Phone": -1, "Pocket_Cam": -1, "Sony_Photo": 0, "Canon_Photo": 1, "Nikon_Photo": 1, "Fuji_Photo": 1, "Fuji_Compact": -1, "Sony_Video": 2, "Pana_Video": 1, "Sony_Hybrid": 1, "Canon_Hybrid": 1, "Canon_Crop": 2, "Pana_M43": 2}},
+            {"text": "렌즈 교환 귀찮아! 발줌(걸어서 구도 잡기) 뛰는 단렌즈 선호.", "scores": {"Phone": 1, "Pocket_Cam": 1, "Sony_Photo": 0, "Canon_Photo": 0, "Nikon_Photo": 0, "Fuji_Photo": 2, "Fuji_Compact": 4, "Sony_Video": 0, "Pana_Video": 0, "Sony_Hybrid": 1, "Canon_Hybrid": 0, "Canon_Crop": 1, "Pana_M43": 0}},
+            {"text": "렌즈? 먼지 들어갈까 무섭고 돈도 없음. 일체형이 짱.", "scores": {"Phone": 5, "Pocket_Cam": 4, "Sony_Photo": -3, "Canon_Photo": -3, "Nikon_Photo": -2, "Fuji_Photo": -2, "Fuji_Compact": 2, "Sony_Video": -1, "Pana_Video": -2, "Sony_Hybrid": -2, "Canon_Hybrid": -2, "Canon_Crop": -2, "Pana_M43": -2}}
+        ]
+    },
+    {
+        "id": 12,
+        "question": "🌙 야간이나 실내(저조도) 촬영 비중은?",
+        "options": [
+            {"text": "나는 어둠의 자식! 밤거리 스냅이나 콘서트, 별 사진을 즐김.", "scores": {"Phone": -3, "Pocket_Cam": -1, "Sony_Photo": 2, "Canon_Photo": 2, "Nikon_Photo": 3, "Fuji_Photo": -1, "Fuji_Compact": -1, "Sony_Video": 3, "Pana_Video": 2, "Sony_Hybrid": 2, "Canon_Hybrid": 2, "Canon_Crop": -1, "Pana_M43": -2}},
+            {"text": "조명이 있는 실내 행사나 카페 촬영이 많음.", "scores": {"Phone": -1, "Pocket_Cam": 1, "Sony_Photo": 1, "Canon_Photo": 2, "Nikon_Photo": 1, "Fuji_Photo": 0, "Fuji_Compact": 0, "Sony_Video": 1, "Pana_Video": 1, "Sony_Hybrid": 2, "Canon_Hybrid": 2, "Canon_Crop": 1, "Pana_M43": 1}},
+            {"text": "주로 맑은 날 낮에 야외에서 촬영함.", "scores": {"Phone": 1, "Pocket_Cam": 1, "Sony_Photo": 0, "Canon_Photo": 0, "Nikon_Photo": 0, "Fuji_Photo": 2, "Fuji_Compact": 2, "Sony_Video": 0, "Pana_Video": 0, "Sony_Hybrid": 1, "Canon_Hybrid": 0, "Canon_Crop": 1, "Pana_M43": 2}},
+            {"text": "모르겠고, 알아서 밝아지면 좋겠음.", "scores": {"Phone": 4, "Pocket_Cam": 1, "Sony_Photo": -1, "Canon_Photo": -1, "Nikon_Photo": -1, "Fuji_Photo": -1, "Fuji_Compact": 1, "Sony_Video": -1, "Pana_Video": -1, "Sony_Hybrid": -1, "Canon_Hybrid": -1, "Canon_Crop": -1, "Pana_M43": -1}}
+        ]
+    },
+    {
+        "id": 13,
+        "question": "🎨 색감에 대한 당신의 신념은?",
+        "options": [
+            {"text": "센서가 깡패, 성능이 만들고 내가 보정으로 완성. (이과형)", "scores": {"Phone": -1, "Pocket_Cam": 0, "Sony_Photo": 4, "Canon_Photo": 2, "Nikon_Photo": 2, "Fuji_Photo": -2, "Fuji_Compact": -2, "Sony_Video": 2, "Pana_Video": 1, "Sony_Hybrid": 2, "Canon_Hybrid": 0, "Canon_Crop": 0, "Pana_M43": 1}},
+            {"text": "특유의 화사한 핑크빛 피부톤 인물, 이게 카메라지.", "scores": {"Phone": 1, "Pocket_Cam": 1, "Sony_Photo": -1, "Canon_Photo": 4, "Nikon_Photo": 0, "Fuji_Photo": 1, "Fuji_Compact": 1, "Sony_Video": 1, "Pana_Video": 0, "Sony_Hybrid": -1, "Canon_Hybrid": 4, "Canon_Crop": 3, "Pana_M43": 0}},
+            {"text": "필름같은 빈티지 스타일이 좋아요", "scores": {"Phone": 0, "Pocket_Cam": -1, "Sony_Photo": -2, "Canon_Photo": -1, "Nikon_Photo": 0, "Fuji_Photo": 4, "Fuji_Compact": 4, "Sony_Video": -2, "Pana_Video": -1, "Sony_Hybrid": -2, "Canon_Hybrid": -1, "Canon_Crop": -1, "Pana_M43": -1}},
+            {"text": "스마트폰 AI 필터가 딥러닝 들어가서 제일 트렌디함.", "scores": {"Phone": 4, "Pocket_Cam": 2, "Sony_Photo": -1, "Canon_Photo": -1, "Nikon_Photo": -1, "Fuji_Photo": -1, "Fuji_Compact": -1, "Sony_Video": -1, "Pana_Video": -1, "Sony_Hybrid": -1, "Canon_Hybrid": -1, "Canon_Crop": -1, "Pana_M43": -1}}
+        ]
+    },
+    {
+        "id": 14,
+        "question": "🫨 영상을 찍을 때 당신의 움직임은?",
+        "options": [
+            {"text": "삼각대에 단단히 고정해 두고 영화처럼 얌전하게 찍습니다.", "scores": {"Phone": 0, "Pocket_Cam": -2, "Sony_Photo": 2, "Canon_Photo": 2, "Nikon_Photo": 2, "Fuji_Photo": 1, "Fuji_Compact": 0, "Sony_Video": 0, "Pana_Video": 0, "Sony_Hybrid": 1, "Canon_Hybrid": 1, "Canon_Crop": 0, "Pana_M43": 0}},
+            {"text": "천천히 걸으면서 숨 참으며 닌자처럼 조심스럽게 무빙.", "scores": {"Phone": 1, "Pocket_Cam": 1, "Sony_Photo": 0, "Canon_Photo": 0, "Nikon_Photo": 1, "Fuji_Photo": 0, "Fuji_Compact": 0, "Sony_Video": 2, "Pana_Video": 1, "Sony_Hybrid": 2, "Canon_Hybrid": 1, "Canon_Crop": 0, "Pana_M43": 1}},
+            {"text": "뛰어다니고 계단 오르락내리락! 미친 짐벌급 손떨방 필수.", "scores": {"Phone": 1, "Pocket_Cam": 5, "Sony_Photo": -1, "Canon_Photo": -1, "Nikon_Photo": -1, "Fuji_Photo": -2, "Fuji_Compact": -1, "Sony_Video": 2, "Pana_Video": 4, "Sony_Hybrid": 1, "Canon_Hybrid": -1, "Canon_Crop": -1, "Pana_M43": 3}},
+            {"text": "액션캠처럼 마구잡이로 들고 찍음. 흔들림도 감성이자 브이로그지.", "scores": {"Phone": 4, "Pocket_Cam": 3, "Sony_Photo": -1, "Canon_Photo": -2, "Nikon_Photo": -1, "Fuji_Photo": -1, "Fuji_Compact": 0, "Sony_Video": 1, "Pana_Video": 1, "Sony_Hybrid": -1, "Canon_Hybrid": -1, "Canon_Crop": -1, "Pana_M43": 1}}
+        ]
+    },
+    {
+        "id": 15,
+        "question": "🏆 마지막 질문! 이 기기로 달성하고 싶은 최종 목표는?",
+        "options": [
+            {"text": "압도적 화질의 사진가, 혹은 전문 1인 영상 크리에이터!", "scores": {"Phone": -3, "Pocket_Cam": 1, "Sony_Photo": 3, "Canon_Photo": 3, "Nikon_Photo": 2, "Fuji_Photo": -1, "Fuji_Compact": -2, "Sony_Video": 3, "Pana_Video": 3, "Sony_Hybrid": 1, "Canon_Hybrid": 2, "Canon_Crop": 0, "Pana_M43": 1}},
+            {"text": "내셔널지오그래픽 뺨치는 풍경 공모전 입상이나 전시회.", "scores": {"Phone": -3, "Pocket_Cam": -2, "Sony_Photo": 3, "Canon_Photo": 3, "Nikon_Photo": 4, "Fuji_Photo": 1, "Fuji_Compact": -1, "Sony_Video": -1, "Pana_Video": 1, "Sony_Hybrid": 1, "Canon_Hybrid": 1, "Canon_Crop": 0, "Pana_M43": 1}},
+            {"text": "내 감성을 듬뿍 담은 인스타 피드/릴스 장인 되기.", "scores": {"Phone": 2, "Pocket_Cam": 3, "Sony_Photo": 0, "Canon_Photo": 0, "Nikon_Photo": 1, "Fuji_Photo": 3, "Fuji_Compact": 3, "Sony_Video": 2, "Pana_Video": 0, "Sony_Hybrid": 1, "Canon_Hybrid": 1, "Canon_Crop": 2, "Pana_M43": 0}},
+            {"text": "거창한 거 없음. 그냥 가볍게 일상 추억 남기기.", "scores": {"Phone": 5, "Pocket_Cam": 3, "Sony_Photo": -2, "Canon_Photo": -3, "Nikon_Photo": -2, "Fuji_Photo": -1, "Fuji_Compact": 2, "Sony_Video": 1, "Pana_Video": -2, "Sony_Hybrid": -1, "Canon_Hybrid": -2, "Canon_Crop": 2, "Pana_M43": -1}}
+        ]
+    }
+]

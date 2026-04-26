@@ -7,7 +7,7 @@ import os
 # 캐싱이 필요한 데이터로딩
 @st.cache_data
 def load_json_data_cached(filename):
-    print(f"[DEBUG]: 파일 시스템에서 {filename} 읽어캐싱하는 중...")
+    print(f"[INFO]: 파일 시스템에서 {filename} 읽어캐싱하는 중...")
     return base_load_json_data(filename)
 
 # 캐싱이 필요 없는 데이터로딩
@@ -35,7 +35,7 @@ def get_image_bytes(image_path):
 
     if not os.path.exists(file_path):
         return None
-    print(f"[DEBUG]: 파일 시스템에서 {image_path} 읽어 바이너리로 캐싱하는 중...")
+    print(f"[INFO]: 파일 시스템에서 {image_path} 읽어 바이너리로 캐싱하는 중...")
     with open(file_path, "rb") as f:
         return f.read()
         

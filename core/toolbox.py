@@ -5,7 +5,7 @@ import os
 
 # [공통] JSON 데이터 로딩함수
 # 캐싱이 필요한 데이터로딩
-@st.cache_data
+@st.cache_data(show_spinner=True)
 def load_json_data_cached(filename):
     print(f"[INFO]: 파일 시스템에서 {filename} 읽어캐싱하는 중...")
     return base_load_json_data(filename)
@@ -27,7 +27,7 @@ def base_load_json_data(filename):
 
 # result.json의 카메라 이미지 파일을 미리 캐싱
 # 이미지 바이너리 캐싱 
-@st.cache_data
+@st.cache_data(show_spinner=True)
 def get_image_bytes(image_path):
 
     current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -40,7 +40,7 @@ def get_image_bytes(image_path):
         return f.read()
         
 # 이미지 프리로딩
-@st.cache_data
+@st.cache_data(show_spinner=True)
 def preload_all_camera_images(result_data):
     data_dict = result_data[0] if isinstance(result_data, list) else result_data
     
@@ -70,11 +70,8 @@ def show_logout_dialog():
     with col1:
         if st.button("네, 로그아웃 할래요", type="primary", width="stretch"):
             # 세션 초기화
-            st.session_state.current_q = 0
-            st.session_state.answers = {}
-            st.session_state.result_analyzed = False
-            st.session_state.logged_in = False
-            st.session_state.user_name = ""
+            # 로그아웃 버튼을 눌렀을 때 실행하기 좋은 코드
+            st.session_state.clear()
             st.switch_page("pages/1_landing.py")
             
     with col2:

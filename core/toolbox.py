@@ -70,7 +70,6 @@ def show_logout_dialog():
     with col1:
         if st.button("네, 로그아웃 할래요", type="primary", width="stretch"):
             # 세션 초기화
-            # 로그아웃 버튼을 눌렀을 때 실행하기 좋은 코드
             st.session_state.clear()
             st.switch_page("pages/1_landing.py")
             

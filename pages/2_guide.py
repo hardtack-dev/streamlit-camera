@@ -2,6 +2,7 @@
 import streamlit as st
 from core import toolbox as tb
 
+print("[LOG]: 가이드 페이지 이동...")
 # 로그인 여부 체크 (미 로그인시, landing페이지로 )
 tb.check_login()
 
@@ -19,6 +20,7 @@ user_name = st.session_state.get("user_name", "사용자")
 left_space, main_content, right_space = st.columns([1, 2, 1])
 
 with main_content:
+    print("[LOG]: 가이딩 페이지 렌더링 시작...")
     st.title(f"📋 반가워요, {user_name}님!")
     st.write("---")
     
@@ -47,8 +49,10 @@ with main_content:
 
         # 퀴즈 시작 버튼
         if st.button("🚀 테스트 시작하기", type="primary", width="stretch"):
+            print("[LOG]: 퀴즈 시작 버튼 클릭됨, 퀴즈 페이지로 이동합니다...")
             st.switch_page("pages/3_quiz.py")
         
         # 로그아웃 버튼
         if st.button("로그아웃 하기", width="stretch"):
+            print("[LOG]: 로그아웃 버튼 클릭됨")
             tb.show_logout_dialog()

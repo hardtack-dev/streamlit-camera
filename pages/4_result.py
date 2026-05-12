@@ -1,13 +1,15 @@
 # pages/4_result.py (결과화면 페이지)
 import time
-import plotly.express as px
 import streamlit as st
 import pandas as pd
+import plotly.express as px
 import re
 from core import toolbox as tb 
 
+print("[LOG]: 결과 페이지 접근 중...")
 # 로그인 여부 체크 (미 로그인시, landing페이지로 )
 tb.check_login()
+
 
 quiz_data = tb.load_json_data_cached("questions.json")
 result_data = tb.load_json_data_cached("result.json")
@@ -35,6 +37,7 @@ def show_competitors_dialog(competitors_list, result_data):
 #  점수 및 순위 계산 로직 
 total_scores = {}                                               # 카테고리별 점수를 담을 딕셔너리
 if "answers" in st.session_state:                               # 사용자가 푼 답변이 세션에 존재하는지 확인
+    print("[LOG]: 사용자의 답변을 기반으로 점수 계산 중...")                   # 출력용 로그
     for q_idx, opt_idx in st.session_state.answers.items():     # 선택한 문항의 인덱스(q_idx)와 옵션의 인덱스(opt_idx)을 꺼내서 처리 
         scores = quiz_data[q_idx]["options"][opt_idx]["scores"] # JSON파일의 형식에 따라, q_idx(질문)에 따른 options(리스트), opt_idx(나의 답변)에 따른 socre(가중치 점수) 추출
         for category, value in scores.items():                  # 카테고리와 점수(가중치)를 순회
@@ -44,12 +47,13 @@ close_competitors = []
 
 # 결과 정렬 및 1위 값 추출
 if total_scores:
+    print("[LOG]: 점수 계산 완료. 결과 정렬 중...")                                                    # 출력용 로그
     sorted_scores = sorted(total_scores.items(), key=lambda item: item[1], reverse=True) # total_scores 딕셔너리를 카테고리, 점수 기준으로 내림차순 정렬하여 저장
     best_camera_key = sorted_scores[0][0]                                   # 1위인 카메라의 키(카테고리명)를 추출
     best_score = sorted_scores[0][1]                                        # 1위인 카메라의 점수를 추출 (비교용)        
     result = result_data[0][best_camera_key]                                # 결과변수에 1위 카메라의 키를 찾아 상세 정보(이미지, 설명 등)를 저장
     formatted_desc = re.sub(r'([.!?])\s+', r'\1  \n\n', result["desc"])     # 설명 텍스트를 문장 단위로 나누는 로직(regex)
-    
+    print("[LOG]: 결과 정렬 완료.")                                                   # 출력용 로그
     # 2, 3위 결과 추출
     for rank in range(1, min(3, len(sorted_scores))):                       # 2위(idx 1)와 3위(idx 2)까지만 추출하도록 범위 설정
         cam_key = sorted_scores[rank][0]                                    # 순위별 카메라 키 추출
@@ -67,6 +71,7 @@ else:
 # 메인 레이아웃 구성 (1 : 3 : 1)
 left_space, main, right_space = st.columns([1, 3, 1])
 with main:
+    print("[LOG]: 결과 페이지 렌더링 중...")                                                   # 출력용 로그
     if not st.session_state.get("balloons_shown", False):   
         st.balloons()
         st.session_state.balloons_shown = True
@@ -93,6 +98,7 @@ with main:
         
         if st.button("다시 테스트하기", width="stretch", type="primary"):
             st.session_state.update({"current_q": 0, "answers": {}, "balloons_shown": False})
+            print("[LOG]: 다시 테스트하기 버튼 클릭됨")
             st.switch_page("pages/2_guide.py")
 
         if st.button("로그아웃 하기", width="stretch"):
@@ -116,6 +122,7 @@ with main:
                         "Fuji_Compact": "👜 후지 똑딱이", "Pana_Video": "🎬 파나소닉 영상",
                         "Pana_M43": "🦅 파나소닉 망원", "Pocket_Cam": "🪄 포켓/짐벌캠", "Phone": "📱 스마트폰"
                     }
+                    print("[LOG]: 분석 결과 시각화 중...")                                                   # 출력용 로그
                     df_scores = pd.DataFrame({"카테고리": [display_names.get(k, k) for k in total_scores.keys()], "점수": list(total_scores.values())})
                     fig = px.line_polar(df_scores, r='점수', theta='카테고리', line_close=True, template="plotly_dark")
                     fig.update_traces(fill='toself', line_color='#4CAF50')
@@ -129,6 +136,7 @@ with main:
 
             # 탭3: 내가 선택한 답변 요약해서 보여주기
             with tab_answers:
+                print("[LOG]:답변요약 탭 렌더링 중...")                                                   # 출력용 로그
                 with st.container(height=500):
                     if "answers" in st.session_state and st.session_state.answers:
                         for q_idx, opt_idx in sorted(st.session_state.answers.items()):

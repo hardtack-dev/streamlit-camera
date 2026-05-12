@@ -15,6 +15,7 @@ if st.session_state.get("show_expire_warning", False):
 # 로그인 다이얼로그 함수
 @st.dialog("로그인")
 def login_dialog():
+    print("[LOG]: 로그인 다이얼로그 띄우는 중...")
     user_id = st.text_input("아이디를 입력하세요")
     user_pw = st.text_input("비밀번호를 입력하세요", type="password")
     
@@ -39,6 +40,7 @@ with main_content:
     with img_center:
         st.image("images/landing/main.png")
     
+    print("[LOG]: 랜딩 페이지 렌더링 중...")
     st.markdown("<h2 style='text-align: center;'> 여러분에게 맞는 카메라를 추천해드립니다!</h2>", unsafe_allow_html=True)
     st.write("---")
     

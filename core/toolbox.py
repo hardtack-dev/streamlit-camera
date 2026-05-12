@@ -56,6 +56,7 @@ def preload_all_camera_images(result_data):
 
 # [공통] 로그인 권한 체크 
 def check_login():
+    print("[LOG]: 로그인 여부 체크 중...")
     if not st.session_state.get("logged_in", False):
         st.session_state.show_expire_warning = True
         st.switch_page("pages/1_landing.py")

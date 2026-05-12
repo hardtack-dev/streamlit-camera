@@ -2,6 +2,7 @@
 import streamlit as st
 from core import toolbox as tb
 
+print("[LOG]: 퀴즈 페이지 이동/갱신됨...")
 # 로그인 여부 체크 (미 로그인시, landing페이지로 )
 tb.check_login()
 
@@ -37,6 +38,7 @@ st.markdown("""
 
 # 질문 데이터 로딩
 # 미리 캐싱된 데이터 가져오기 (toolbox의 캐싱 로더 활용)
+
 
 
 if "current_q" not in st.session_state: st.session_state.current_q = 0
@@ -92,9 +94,12 @@ with col2:
                 st.session_state.answers[curr_idx] = btn_idx    # 대답에는 질문 인덱스 번호와, 선택한 옵션의 인덱스 번호 저장
                 if curr_idx < len(quiz_data) - 1:               # 마지막 질문이 아니라면, 다음 질문으로 이동
                     st.session_state.current_q += 1             # 다음 질문으로 이동하기 위해, current_q 인덱스 번호 1 증가
+                    print("[LOG]: 다음 질문으로 이동...")  
+                    print(f"[LOG]: 퀴즈 페이지 렌더링[문제 INDEX: {st.session_state.current_q}번]")
                     st.rerun()                                  # 이동 시, 페이지 다시 렌더링
                 else:
                     st.switch_page("pages/4_result.py")         # 마지막 질문이라면, 결과 페이지로 이동
+                    print("[LOG]: 결과 페이지로 이동...")
 
     st.write("---")
     
@@ -103,10 +108,12 @@ with col2:
         if curr_idx > 0:
             if st.button("⬅️ 이전", key="btn_prev", type="tertiary", width="stretch"):
                 st.session_state.current_q -= 1
+                print("[LOG]: 이전 질문으로 이동...")
                 st.rerun()
             
     with nav_col2:
         if curr_idx in st.session_state.answers and curr_idx < len(quiz_data) - 1:
             if st.button("다음 ➡️", key="btn_next", type="tertiary", width="stretch"):
                 st.session_state.current_q += 1
+                print("[LOG]: 다음 질문으로 이동...")
                 st.rerun()
